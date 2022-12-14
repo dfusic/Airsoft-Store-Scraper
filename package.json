@@ -4,7 +4,12 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "setup:server": "npm install",
+    "setup:app": "cd ./hristo-scraper-fe && npm install",
+    "start:server": "nodemon server.js",
+    "start:scraper": "nodemon index.js",
+    "start:app": "cd ./hristo-scraper-fe && npm start"
   },
   "author": "",
   "license": "ISC",
